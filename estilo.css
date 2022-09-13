@@ -1,0 +1,68 @@
+body {
+    color: #222;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body, h3, div, p, input{
+    margin: 0;
+    padding: 0
+}
+ h3{
+    padding: 20px;
+    margin-bottom: 20px;
+ }
+.publicacion{
+    text-align: left;
+    margin: 20px;
+    color: #555;
+    opacity: 0;
+    animation: aparecer 1s forwards 0.5s;
+}
+.publicacion p{
+    padding:10px 20px;
+    border-left:2px solid #48e
+}
+.publicacion h3{
+    color: #48e;
+    border-bottom:2px solid #48e;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.comentarios{
+    display: flex;
+    width: 100%;
+}
+
+.comentarios input{
+    padding: 8px 12px;
+    border: none;
+    background: #48e;
+    color: #fff;
+    outline: none;
+}
+.comentarios .comentario{
+    flex-grow: 1;
+}
+
+.comentarios .enviar{
+    min-width: 60px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.comentario::placeholder{
+    color: #bcf;
+    text-shadow: none;    
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
